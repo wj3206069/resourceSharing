@@ -1,0 +1,157 @@
+@import './reset.less';
+// 函数区
+@import './mixins.less';
+// 颜色
+@import './color.less';
+// 字体属性
+@import './font.less';
+// 辅助类
+@import './help.less';
+// 盒模型
+@import './box.less';
+// 修改饿了么样式
+@import './elememt/index.less';
+// 新增服务模板管理
+@import './createnServiceTemp/index.less';
+//单位设置
+@unit: px;
+// flex 布局
+.zx-flex {
+  display: flex;
+}
+.justify {
+  justify-content: center;
+}
+.end {
+  justify-content: flex-end;
+}
+.start {
+  justify-content: flex-start;
+}
+.between {
+  justify-content: space-between;
+}
+.around {
+  justify-content: space-around;
+}
+.align {
+  align-items: center;
+}
+.column {
+  flex-direction: column;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-1 {
+  flex: 1;
+}
+// 上划线 下划线
+.line-and {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  &::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background-color: @borderColor1;
+    // transform: scaleY(0.5);
+    z-index: 9;
+  }
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: @borderColor1;
+    // transform: scaleY(0.5);
+    z-index: 9;
+  }
+}
+.line-top {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  &::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background-color: @borderColor1;
+    // transform: scaleY(0.5);
+    z-index: 9;
+  }
+}
+
+.line-bottom {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: @borderColor1;
+    // transform: scaleY(0.5);
+    z-index: 9;
+  }
+}
+
+// placeholder颜色
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: @grey-1;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: @grey-1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: @grey-1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: @grey-1;
+}
+
+// 小手
+.cursor {
+  cursor: pointer;
+}
+
+/* 媒体查询 */
+@media screen and (min-width: 2048px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2047px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  html {
+    font-size: 10px;
+  }
+}

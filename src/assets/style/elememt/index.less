@@ -1,0 +1,345 @@
+// .el-form-item__content {
+//   display: flex;
+// }
+// 首页
+.home {
+  .el-date-editor,
+  .el-input__inner {
+    width: 120px;
+  }
+  .el-input__inner {
+    border: 1px solid @borderColor1;
+  }
+  // 日历样式修改
+  .vdp-datepicker__calendar header {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid @borderColor1;
+    border-radius: 5px;
+  }
+  .vdp-datepicker__calendar header > span {
+    height: 50px;
+    line-height: 50px;
+    color: #69696a;
+  }
+  .vdp-datepicker__calendar .cell.selected {
+    background: #4c91e3;
+    border-radius: 5px;
+    color: #fff;
+  }
+  .vdp-datepicker__calendar header + div {
+    border-top: 1px solid @borderColor1;
+  }
+  .vdp-datepicker__calendar {
+    width: 100%;
+    height: 450px;
+    border: none;
+  }
+  .vdp-datepicker__calendar .cell {
+    height: 56px;
+    line-height: 56px;
+  }
+}
+
+// 机构订单列表
+.order-list {
+  .el-header {
+    height: auto !important;
+  }
+  .el-tabs {
+    margin-top: 30px;
+    border: none;
+    box-shadow: 0 0 0;
+    .el-tabs__header {
+      background-color: #fff;
+    }
+    .el-tabs__item {
+      height: 45px;
+      line-height: 45px;
+      font-size: 16px;
+      margin: 0 30px;
+      border-top: 4px solid transparent;
+      &.is-active {
+        color: @blueActive;
+        border-top-color: @blueActive;
+      }
+    }
+  }
+  .el-input__inner {
+    height: 40px;
+    border: 1px solid @borderColor1;
+  }
+  .el-button {
+    color: @white;
+  }
+  .select-box .el-input__inner {
+    // TODO: 适配
+    min-width: 140px;
+    max-width: 240px;
+  }
+  .el-range-separator {
+    width: 10%;
+  }
+}
+
+// scrollbar
+.el-scrollbar__wrap {
+  overflow-x: hidden;
+}
+
+// 登入
+.login {
+  .el-input__inner {
+    height: 3.571429rem;
+    // 50px
+    width: 100%;
+    padding-left: 50px;
+    border-radius: 1.785714rem;
+    // 25px
+    background-color: #ececec;
+    color: #b4bec0;
+  }
+  .el-checkbox__inner {
+    border-radius: 50%;
+  }
+  .is-checked .el-checkbox__label,
+  .el-checkbox__label {
+    color: #000;
+  }
+  .isFocus {
+    .el-input__inner {
+      border: 1px solid #1156f3;
+      background-color: rgba(17, 86, 243, 0.1);
+      color: @grey;
+    }
+    .el-input__prefix {
+      color: #1156f3;
+    }
+  }
+  // 获取验证码居中
+  .get-code .el-input__suffix-inner {
+    height: inherit;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
+
+// 注册
+.Register {
+  .el-input__inner {
+    width: 400px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  // 获取验证码居中
+  .get-code .el-input__suffix-inner {
+    height: inherit;
+    width: 110px;
+    display: flex;
+    align-items: center;
+  }
+  // 滑块样式
+  .slide-verify-slider {
+    width: 400px !important;
+  }
+  .slide-verify-refresh-icon {
+    right: -90px !important;
+  }
+  .is-checked .el-checkbox__label,
+  .el-checkbox__label {
+    color: #000;
+  }
+}
+
+// 新增服务模板管理
+// 基本信息
+.CreateNewTemplate {
+  .el-input__inner {
+    width: 570px;
+    border-color: @borderColor1;
+    font-size: 16px;
+  }
+  .el-form-item__label {
+    margin-right: 50px;
+    font-size: 16px;
+    color: @grey-3;
+  }
+  .el-textarea__inner {
+    min-height: 140px !important;
+    width: 570px;
+    border-color: @borderColor1;
+    font-size: 16px;
+  }
+  .el-upload {
+    height: 100%;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .custom-handle {
+    .el-input__inner {
+      width: 280px;
+      border-color: @borderColor1;
+      font-size: 16px;
+    }
+    .invoice {
+      .el-input__inner {
+        width: 215px;
+      }
+    }
+  }
+  .custom-time {
+    padding: 15px 0;
+    .el-date-editor {
+      width: 180px;
+    }
+    .el-input__inner {
+      width: 180px;
+      border-color: @borderColor1;
+      font-size: 16px;
+    }
+  }
+
+  .preview {
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    border: 1px solid @primary;
+    background-color: rgba(97, 163, 254, 0.1);
+  }
+  // 红点
+  .must::after {
+    content: '*';
+    color: #c51316;
+    margin-left: 4px;
+  }
+}
+//订单详情
+.orderDetail {
+  .el-table thead {
+    color: RGBA(71, 71, 71, 1);
+  }
+  .main-container .el-table th {
+    color: RGBA(221, 221, 221, 1);
+  }
+}
+
+// 上传报告
+.UploadReport {
+  .el-upload-list {
+    display: none;
+  }
+  .el-upload-dragger {
+    width: 100%;
+    height: auto;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// 客户管理 单位用户
+.unitUser {
+  .el-upload {
+    padding-top: 0;
+    margin-right: 10px;
+  }
+  .cell {
+    font-size: 14px;
+  }
+  .select-group .el-input__inner {
+    width: 150px;
+  }
+  .unitAddress {
+    .el-select {
+      width: 95px !important;
+    }
+  }
+}
+// 新增专家
+.createSpecialist {
+  .el-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    background: pink;
+    border-radius: 10px;
+    background: #edf3f8;
+    .el-icon-plus:before {
+      font-size: 60px;
+      color: #ddd;
+    }
+  }
+}
+// 新增专家 弹窗
+.createTemp .select-other {
+  .el-dialog {
+    top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    height: 625px !important;
+    width: 560px !important;
+  }
+  .el-dialog__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  // 穿梭框
+  .el-transfer {
+    .el-transfer-panel {
+      width: 230px;
+      .el-transfer-panel__header {
+        height: 50px;
+        background: @primary;
+        .el-checkbox {
+          height: inherit;
+          line-height: 50px;
+        }
+        .el-checkbox__label,
+        span {
+          color: @white;
+        }
+      }
+      .el-transfer-panel__body,
+      .el-transfer-panel__list {
+        height: 360px;
+      }
+    }
+    .el-transfer__buttons {
+      padding: 0;
+      .el-transfer__button {
+        width: 50px;
+        height: 50px;
+        margin: 0 5px;
+        &:nth-child(2) {
+          margin-top: 10px;
+        }
+        .el-icon-arrow-left:before,
+        .el-icon-arrow-right:before {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+// 客户管理-编辑点位用户
+.unitEdit {
+  .el-upload-dragger {
+    width: 300px;
+    height: 180px;
+    border: 1px solid @borderColor1;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,8 @@
+
+// 循环函数 步进值为2
+.argon-loop(@i:1,@n,@name,@attr) when (@i <= @n) {
+    .@{name}-@{i} {
+        @{attr}: ~'@{i}@{unit}';
+    }
+    .argon-loop((@i + 2),@n,@name,@attr);
+  }

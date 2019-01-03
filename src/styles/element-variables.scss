@@ -1,0 +1,44 @@
+@import '_variables';
+
+/* Main
+--------------------------*/
+$--main-padding: $main-padding;
+
+
+/* Colors
+-------------------------- */
+
+$--color-primary: $color-primary;
+$--color-success: $color-success;
+$--color-warning: $color-warning;
+$--color-danger: $color-danger;
+$--border-color-lighter: $border-color-lighter;
+$--border-color-base: $border-color-base;
+$--color-text-regular: $black;
+/* border
+-------------------------- */
+
+// $--input-border: none;
+$--border-radius-base: 0;
+$--border-radius-small: 0;
+
+/* Font
+-------------------------- */
+
+$--font-size-base: $font-size-base;
+$--font-size-small: $font-size-small;
+$--font-size-large: $font-size-large;
+
+/* Input
+-------------------------- */
+
+$--input-focus-border: inherit;
+/* Pagination
+-------------------------- */
+
+$--pagination-font-size: $pagination-font-size;
+$--pagination-button-height: $pagination-button-height;
+$--pagination-button-width: 43.5px;
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";

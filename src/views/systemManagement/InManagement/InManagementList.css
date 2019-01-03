@@ -1,0 +1,62 @@
+.qualification .el-upload {
+  width: 100px;
+  height: 30px;
+  background-color: #EEEEEE;
+  border: 1px solid #ddd;
+  padding: 0;
+  padding-top: 8px;
+  /* margin-top: -19px; */
+  /* margin-left: 190px; */
+}
+
+.qualification .zizi_title .zizi_title_s .el-upload {
+  display: none
+}
+
+.el-upload-list--picture-card .el-upload-list__item-actions {
+  left: 0;
+}
+
+.qualification .el-dialog__wrapper .el-dialog .el-dialog__body .zizi_title span>div {
+  margin-left: 190px;
+  margin-top: -15px;
+}
+
+.qualification .el-dialog__wrapper .el-dialog .el-dialog__body .zizi_title .signal {
+  color: #C51316;
+  margin-right: 4px;
+}
+
+.qualification .el-dialog__wrapper .el-dialog .el-dialog__body .img_fs {
+  margin-left: 190px;
+  color: #C51316;
+  font-size: 12px;
+}
+
+.qualification .texe_s_f {
+  padding: 0 3px;
+  line-height: 36px;
+}
+
+.common-dialog .el-dialog__wrapper .el-dialog .el-dialog__body .timen_qualification .el-form-item__content {
+  margin-left: 0 !important;
+}
+
+.qualification .el-dialog__wrapper .el-dialog .el-dialog__body .component_year {
+  margin-bottom: 0;
+}
+
+.qualification i {
+  font-style: normal
+}
+
+/* 图片详情 */
+.show_img_s .el-dialog__header{
+  padding: 23px 0 !important;
+}
+.v-modal{
+  z-index: 1999 !important;
+}
+.show_img_s .el-dialog{
+      top: 66px !important;
+}

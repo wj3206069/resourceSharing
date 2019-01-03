@@ -1,0 +1,45 @@
+// 盒模型
+// 强制转换成盒模型
+.block {
+  display: block;
+  overflow: hidden;
+}
+// 边框
+.border-b {
+  border-bottom: 1px solid @grey-3;
+}
+.border-l {
+  border-left: 1px solid @grey-3;
+}
+// 内边距
+.argon-loop(0, 30, pd, padding); // padding: 0 ~ 20px; 使用 class="pd-0 ~ pd-20"
+.argon-loop(0, 30, pd-t, padding-top); // padding-top: 0 ~ 20px;
+// 外边距
+.argon-loop(0, 30, mg, margin); // margin: 0 ~ 20px;
+.argon-loop(
+  0,
+  30,
+  mg-t,
+  margin-top
+); // margin-top: 0 ~ 20px; 使用 class="mg-t-0 ~ mg-t-20"
+// 圆
+.round {
+  border-radius: 100%;
+}
+// 浮动
+.float-l {
+  float: left;
+}
+.float-r {
+  float: right;
+}
+.clearfix:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}

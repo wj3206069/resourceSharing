@@ -1,0 +1,200 @@
+//表格公共样式
+.common-table {
+  .el-table__header-wrapper {
+    font-size: 16px;
+    table {
+      thead {
+        tr {
+          th {
+            background-color: #61a3fe !important;
+            color: white;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+  .el-table__body-wrapper {
+    font-size: 14px;
+    table {
+      tbody {
+        tr {
+          height: 40px;
+          span {
+            color: #61a3fe;
+            cursor: pointer;
+          }
+          .editing{
+            color: #67ce47;
+          }
+          .report{
+            color: #02F78E;
+          }
+          .audit{
+            color: #ccbf13;
+          }
+          .audited{
+            color: #d571d6;
+          }
+          .nopass{
+            color: #FF5129;
+          }
+          .published{
+            color: #61a3fe;
+          }
+          td{
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+  .el-table th.is-leaf,
+  .el-table td {
+    border-bottom: none;
+  }
+  .el-table--border th,
+  .el-table--border td {
+    border-right: none;
+  }
+}
+
+//弹框公共样式
+.common-dialog {
+  .el-dialog__wrapper {
+    .el-dialog {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 600px;
+      height: calc(100vh - 50px);
+      margin: 0 !important;
+      border-radius: 0;
+      .el-dialog__header {
+        background-color: white;
+        border-radius: 0;
+        padding: 13px 20px;
+        border-bottom: 1px solid #dddddd;
+        .el-dialog__title {
+          color: #474747;
+          font-size: 16px;
+        }
+        i {
+          color: #939393;
+        }
+      }
+      .el-dialog__body {
+        height: 82vh;
+        // padding-top: 30px;
+        // padding-right: 110px;
+        overflow-y: auto;
+        .el-form-item {
+          margin-bottom: 18px;
+          .el-form-item__label {
+            width: 190px;
+            text-align: right;
+          }
+          .el-form-item__content {
+            margin-left: 190px !important;
+            width: 300px;
+            flex-wrap: wrap;
+            .el-select {
+              width: 300px;
+            }
+            input {
+              height: 36px;
+              border-color: #dddddd;
+            }
+            textarea {
+              border-color: #dddddd;
+              height: 100px;
+            }
+          }
+        }
+      }
+      .el-dialog__footer {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border-top: 1px solid #dddddd;
+        .dialog-footer {
+          //上一步按钮的class
+          .prev-step {
+            background-color: #61a3fe;
+            padding: 11px 19px;
+          }
+          //提交、暂存、暂存下一步按钮的class
+          .primary-btn {
+            background-color: #61a3fe;
+            padding: 11px 26px;
+          }
+          //取消按钮的class
+          .cancel {
+            background-color: #cccccc;
+            color: white;
+            padding: 11px 26px;
+          }
+          .primary-btn,
+          .prev-step,
+          .cancel {
+            border-radius: 10px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+.changeDevice {
+  .el-dialog__wrapper {
+    .el-dialog {
+      width: 900px;
+    }
+  }
+}
+
+// 校验规则红款线条----------
+.el-form-item.is-error .el-input__inner,
+.el-form-item.is-error .el-input__inner:focus,
+.el-form-item.is-error .el-textarea__inner,
+.el-form-item.is-error __inner:focus {
+  border-color: #c51316 !important;
+}
+
+.el-select-dropdown__wrap.el-scrollbar__wrap {
+  margin-bottom: 0 !important;
+}
+
+.zxicon {
+  margin-right: 6px;
+}
+
+// 二次确认弹框
+.el-popover{
+  p{
+    margin: 4px 0;
+    text-align: center;
+  }
+  .el-button--primary{
+    margin-right: 20px;
+  }
+}
+
+/* 单元格超过长度 出现省略号 */
+.display {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+// 地图组件搜索结果样式，不能放在地图组件内部
+.amap-sug-result {
+  z-index: 3000;
+}
+
+// 隐藏滚动条
+::-webkit-scrollbar {
+  display: none;
+}
+

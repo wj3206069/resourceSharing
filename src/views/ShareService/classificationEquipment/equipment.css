@@ -1,0 +1,116 @@
+.service {
+  padding: 20px;
+  width: 100%;
+}
+
+.service .service-header .search div {
+  width: 300px;
+  height: 36px;
+}
+
+.service .service-header .search div input {
+  border: 1px solid #939393;
+  height: 36px;
+}
+
+.service .service-header .search button {
+  background-color: #61a3fe;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 16px;
+}
+
+.service .service-header .operation-button button {
+  padding: 11px 16px;
+  background-color: #61a3fe;
+  border: none;
+  border-radius: 10px;
+}
+
+.service .select-group {
+  padding-top: 20px;
+}
+
+.service .select-group .select-item label {
+  font-size: 14px;
+}
+
+.service .select-group .select-item .el-select {
+  width: 150px;
+  height: 36px;
+}
+
+.service .select-group .select-item .el-select input {
+  height: 36px;
+  border: 1px solid #939393;
+}
+
+.service .service-table {
+  /* height: 660px; */
+  height: auto;
+  padding-top: 20px;
+  overflow-y: auto;
+}
+
+.service .service-table .el-table th {
+  background-color: #61a3fe;
+  color: white;
+}
+
+.service .service-table .el-table .no-public {
+  color: #ff5129;
+}
+
+.service .service-table .el-table .particulars {
+  color: #61a3fe;
+}
+
+.service .service-table .el-table--border th,
+.service .service-table .el-table--border td {
+  border-right: none;
+  height: 50px;
+}
+
+.service .service-table .el-table th.is-leaf,
+.service .service-table .el-table td {
+  border: none;
+}
+
+.service .service-table .el-pagination.is-background {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.operation-button .el-button--primary {
+  height: 36px;
+}
+
+/* 私有方法------------------------------------------------- */
+.flex_ju {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex_ju .el-select {
+  width: 150px;
+}
+
+.flex_ju .select-item:nth-child(2) {
+  padding-left: 30px;
+}
+
+.flex_ju .el-input--suffix .el-input__inner {
+  height: 36px;
+}
+
+.flex_ju .search {
+  margin-left: 30px;
+}
+
+.margin_top_30 {
+  margin-top: 30px
+}
+
+.flex_ju .select-item {
+  font-size: 14px;
+}

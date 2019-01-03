@@ -1,0 +1,49 @@
+.service-role {
+  display: flex;
+}
+
+.service-role .tree_structure {
+  flex-basis: 400px;
+}
+
+.service-role .service-table-role {
+  flex: 1;
+  padding-top: 0;
+}
+
+.service-role .service-table .operation-button {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.service-role .service-table .operation-button .el-button--primary {
+  background-color: #61a3fe;
+  border-color: #61a3fe;
+  color: #fff;
+}
+
+.service-role .service-table .operation-button .cancel {
+  background-color: #cccccc;
+  border-color: #cccccc;
+}
+
+.new_service .service-table .table_s {
+  margin-top: 20px;
+}
+
+.new_service .el-input {
+  width: 300px;
+}
+
+.new_service .el-input__inner {
+  height: 36px;
+  border-color: #ddd;
+}
+
+/* .organization_data .el-upload {
+  background-color: #eee;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+} */
